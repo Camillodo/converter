@@ -1,0 +1,20 @@
+@use 'src/styles/vars';
+
+
+.header{
+  height:142px;
+  width: 100%;
+  background-color: vars.$main-color;
+  text-align:center;
+  padding-top:37px;
+  color:vars.$light-color;
+  .header__title{
+    font-size: vars.$title-Fontsize;
+    font-weight: vars.$title-FontWeight;
+    padding-bottom: 18px;
+  }
+  .header__subtitle{
+    font-size: vars.$subtitle-Fontsize;
+    font-weight: vars.$main-FontWeight;
+  }
+}

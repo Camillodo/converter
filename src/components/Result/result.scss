@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+@use 'src/components/Header/header';
+
+.result__container{
+  @extend .header;
+  background-color:vars.$light-color;
+  color:vars.$main-color;
+  .result__amount{
+    @extend .header__title;
+  }
+  .result__currency{
+    @extend .header__subtitle;
+  }
+}

@@ -1,0 +1,30 @@
+@use 'src/styles/vars';
+
+.countries__list{
+  background-color: vars.$light-color;
+  height: 250px;
+  color: vars.$main-color;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  .countries__list__title{
+    height: 55px;
+    font-weight: vars.$title-FontWeight;
+    line-height: 3;
+    padding-left: 15px;
+  }
+  .countries__list__item{
+    height: 42px;
+    font-weight: vars.$currency-FontWeight;
+    line-height: 3;
+    padding-left: 15px;
+    border-top: solid 1px vars.$alternate-color;
+    background-color: inherit;
+    transition: background-color vars.$slow-transition;
+    &:hover{
+      background-color: vars.$alternate-color;
+      cursor: pointer;
+      transition: background-color vars.$fast-transition
+    }
+  }
+}
+
